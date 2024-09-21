@@ -14,13 +14,13 @@ interface Props {
 const Search: React.FC<Props> = ({
   onSearchSubmit,
   search,
-  handleSearchChange
+  handleSearchChange,
 }: Props): JSX.Element => {
   return (
     <>
       <form onSubmit={onSearchSubmit}>
-      <input value={search} onChange={(e) => handleSearchChange(e)} />
-      </form>     
+        <input value={search} onChange={(e) => handleSearchChange(e)} />
+      </form>
     </>
   );
 };
