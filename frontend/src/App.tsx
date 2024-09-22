@@ -5,6 +5,8 @@ import Search from "./Components/Search/Search";
 import { CompanySearch } from "./company";
 import { searchCompanies } from "./api";
 import ListPortfolio from "./Components/ListPortfolio/ListPortfolio";
+import Navbar from "./Components/Navbar/Navbar";
+import Hero from "./Components/Hero/Hero";
 
 function App() {
   const [search, setSearch] = useState<string>("");
@@ -48,6 +50,7 @@ function App() {
   // {codition ? true : false} is a ternary operator
   return (
     <div className="App">
+      <Navbar/>
       <Search
         onSearchSubmit={onSearchSubmit}
         search={search}
